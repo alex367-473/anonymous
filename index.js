@@ -70,7 +70,7 @@ app.post("/uploadFile", upload.single('file'), (req, res) => {
     const name = req.file.originalname
     const file_name = req.file.filename
     const filePath = __dirname + '/uploadedFile/' +encodeURIComponent(name)
-    const host_url = 'https://anonymous-6nmo.onrender.com'; // یا آدرس سرورت
+    const host_url = 'https://anonymous-1-3t1d.onrender.com'; // یا آدرس سرورت
     fs.rename(__dirname + '/uploadedFile/' + file_name, __dirname + '/uploadedFile/' +encodeURIComponent(name), function(err) { 
       if ( err ) console.log('ERROR: ' + err);
     });
